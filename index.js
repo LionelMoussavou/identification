@@ -1,6 +1,7 @@
 const express = require('express')
 const db = require('./DB/db')
 const Routes = require('./Routes/routes')
+require('./middlewares/auth')
 const app = express()
 
 db()
